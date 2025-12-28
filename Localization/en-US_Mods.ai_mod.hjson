@@ -1,2 +1,10 @@
-# This file will automatically update with entries for new content after a build and reload.
-
+Items: {
+	HyperSpeedClock: {
+		DisplayName: Hyper Speed Clock
+		Tooltip:
+			'''
+			Increases attack speed by 100% for all classes
+			"Time moves faster when you're fighting"
+			'''
+	}
+}

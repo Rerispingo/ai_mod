@@ -1,0 +1,10 @@
+Items: {
+	HyperSpeedClock: {
+		DisplayName: Relógio de Hiper Velocidade
+		Tooltip:
+			'''
+			Aumenta a velocidade de ataque em 100% para todas as classes
+			"O tempo passa mais rápido quando você está lutando"
+			'''
+	}
+}
