@@ -7,23 +7,26 @@ namespace ai_mod
     {
         public override float UseTimeMultiplier(Item item, Player player) {
             if (player.GetModPlayer<HyperSpeedPlayer>().hasHyperSpeedClock) {
-                // Reduz o tempo de uso pela metade, dobrando a frequência de ataque/tiro.
-                return 0.5f;
+                // Obtém o bônus das configurações e calcula o multiplicador.
+                // Multiplicador = 1 / (1 + bônus%). Ex: 100% bônus -> 1 / (1 + 1) = 0.5 (dobra a velocidade).
+                float bonus = ModContent.GetInstance<HyperSpeedConfig>().AttackSpeedBonus / 100f;
+                return 1f / (1f + bonus);
             }
             return base.UseTimeMultiplier(item, player);
         }
 
         public override float UseAnimationMultiplier(Item item, Player player) {
             if (player.GetModPlayer<HyperSpeedPlayer>().hasHyperSpeedClock) {
-                // Reduz o tempo da animação pela metade, dobrando a velocidade visual do movimento.
-                return 0.5f;
+                // Aplica o mesmo multiplicador para a animação.
+                float bonus = ModContent.GetInstance<HyperSpeedConfig>().AttackSpeedBonus / 100f;
+                return 1f / (1f + bonus);
             }
             return base.UseAnimationMultiplier(item, player);
         }
 
         public override void ModifyShootStats(Item item, Player player, ref Microsoft.Xna.Framework.Vector2 position, ref Microsoft.Xna.Framework.Vector2 velocity, ref int type, ref int damage, ref float knockback) {
             if (player.GetModPlayer<HyperSpeedPlayer>().hasHyperSpeedClock) {
-                // Dobra a velocidade do projetil disparado para condizer com o tema de "Hiper Velocidade".
+                // Mantém a velocidade do projétil dobrada como característica do item.
                 velocity *= 2f;
             }
         }

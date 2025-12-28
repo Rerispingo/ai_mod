@@ -45,10 +45,15 @@ Este projeto segue as convenções de codificação padrão do C# e as diretrize
 ### Itens Adicionados
 
 - **Relógio de Hiper Velocidade (Hyper Speed Clock):**
-    - Um acessório que aumenta a velocidade de ataque de todas as classes em 100%.
-    - **Correção de Frequência:** Utiliza um `GlobalItem` para reduzir o `useTime` e `useAnimation` de todas as armas pela metade. Isso garante que a frequência de disparos de projéteis (como os da Espada-espinho) também seja dobrada, o que não ocorre apenas com o atributo base de Attack Speed.
-    - **Velocidade de Projétil:** Também dobra a velocidade dos projéteis disparados.
+    - Um acessório que aumenta a velocidade de ataque de todas as classes.
+    - **Configurável:** O bônus de velocidade pode ser ajustado entre 0% e 300% através do menu de configurações do mod.
+    - **Receita:** Pode ser fabricado livremente (sem itens e sem bancada).
+    - **Correção de Frequência:** Utiliza um `GlobalItem` para reduzir o `useTime` e `useAnimation` de todas as armas com base no bônus configurado. Isso garante que a frequência de disparos de projéteis também seja aumentada proporcionalmente.
+    - **Velocidade de Projétil:** Dobra a velocidade dos projéteis disparados.
     - Localização disponível em Inglês e Português.
+
+### Configurações
+- **Bônus de Velocidade de Ataque:** Slider de 0 a 300% (Padrão: 100%).
 
 ## Instruções de Desenvolvimento
 

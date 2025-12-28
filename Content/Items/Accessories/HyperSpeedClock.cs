@@ -20,8 +20,14 @@ namespace ai_mod.Content.Items.Accessories
         public override void UpdateAccessory(Player player, bool hideVisual) {
             // Define a flag no ModPlayer para que o GlobalItem possa aplicar os bônus de velocidade.
             // O uso de GlobalItem garante que a frequência de projéteis também seja aumentada,
-            // o que nem sempre acontece apenas aumentando o atributo de AttackSpeed.
+            // o que nem sempre acontece apenas aumentando o atributo de Attack Speed.
             player.GetModPlayer<HyperSpeedPlayer>().hasHyperSpeedClock = true;
+        }
+
+        public override void AddRecipes() {
+            // Cria uma receita simples: sem itens e sem necessidade de bancada.
+            CreateRecipe()
+                .Register();
         }
     }
 }

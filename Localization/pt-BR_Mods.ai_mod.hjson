@@ -3,8 +3,20 @@ Items: {
 		DisplayName: Relógio de Hiper Velocidade
 		Tooltip:
 			'''
-			Aumenta a velocidade de ataque em 100% para todas as classes
+			Aumenta significativamente a velocidade de ataque de todas as armas.
 			"O tempo passa mais rápido quando você está lutando"
 			'''
+	}
+}
+
+Configs: {
+	HyperSpeedConfig: {
+		DisplayName: Configuração de Hiper Velocidade
+		Headers.Ajustes: Ajustes do Relógio
+
+		AttackSpeedBonus: {
+			Label: Bônus de Velocidade de Ataque (%)
+			Tooltip: Define o bônus de velocidade (0-300%). 100% dobra a velocidade original.
+		}
 	}
 }

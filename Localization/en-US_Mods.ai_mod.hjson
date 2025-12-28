@@ -3,8 +3,20 @@ Items: {
 		DisplayName: Hyper Speed Clock
 		Tooltip:
 			'''
-			Increases attack speed by 100% for all classes
+			Significantly increases the attack speed of all weapons.
 			"Time moves faster when you're fighting"
 			'''
+	}
+}
+
+Configs: {
+	HyperSpeedConfig: {
+		DisplayName: Hyper Speed Configuration
+		Headers.Ajustes: Clock Adjustments
+
+		AttackSpeedBonus: {
+			Label: Attack Speed Bonus (%)
+			Tooltip: Sets the attack speed bonus (0-300%). 100% doubles the original speed.
+		}
 	}
 }
