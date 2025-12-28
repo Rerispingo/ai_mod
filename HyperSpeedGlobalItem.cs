@@ -30,5 +30,13 @@ namespace ai_mod
                 velocity *= 2f;
             }
         }
+
+        public override bool CanConsumeAmmo(Item weapon, Item ammo, Player player) {
+            // Se o jogador tiver o relógio e a munição infinita estiver ativada na config, não consome.
+            if (player.GetModPlayer<HyperSpeedPlayer>().hasHyperSpeedClock && ModContent.GetInstance<HyperSpeedConfig>().InfiniteAmmo) {
+                return false;
+            }
+            return base.CanConsumeAmmo(weapon, ammo, player);
+        }
     }
 }

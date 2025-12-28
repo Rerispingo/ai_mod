@@ -18,5 +18,14 @@ namespace ai_mod
         [Range(0, 300)]
         [Slider]
         public int AttackSpeedBonus;
+
+        [DefaultValue(false)]
+        public bool InfiniteMana;
+
+        [DefaultValue(false)]
+        public bool InfiniteFlight;
+
+        [DefaultValue(false)]
+        public bool InfiniteAmmo;
     }
 }

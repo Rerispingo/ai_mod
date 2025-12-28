@@ -4,6 +4,7 @@ Items: {
 		Tooltip:
 			'''
 			Significantly increases the attack speed of all weapons.
+			Can grant infinite mana, flight, and ammo (configurable).
 			"Time moves faster when you're fighting"
 			'''
 	}
@@ -17,6 +18,21 @@ Configs: {
 		AttackSpeedBonus: {
 			Label: Attack Speed Bonus (%)
 			Tooltip: Sets the attack speed bonus (0-300%). 100% doubles the original speed.
+		}
+
+		InfiniteMana: {
+			Label: Infinite Mana
+			Tooltip: If enabled, the player will have infinite mana while the accessory is equipped.
+		}
+
+		InfiniteFlight: {
+			Label: Infinite Flight
+			Tooltip: If enabled, the player will have infinite flight time (wings/boots) while the accessory is equipped.
+		}
+
+		InfiniteAmmo: {
+			Label: Infinite Ammo
+			Tooltip: If enabled, weapons will not consume ammo while the accessory is equipped.
 		}
 	}
 }

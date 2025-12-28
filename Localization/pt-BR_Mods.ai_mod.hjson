@@ -4,6 +4,7 @@ Items: {
 		Tooltip:
 			'''
 			Aumenta significativamente a velocidade de ataque de todas as armas.
+			Pode conceder mana, voo e munição infinita (configurável).
 			"O tempo passa mais rápido quando você está lutando"
 			'''
 	}
@@ -17,6 +18,21 @@ Configs: {
 		AttackSpeedBonus: {
 			Label: Bônus de Velocidade de Ataque (%)
 			Tooltip: Define o bônus de velocidade (0-300%). 100% dobra a velocidade original.
+		}
+
+		InfiniteMana: {
+			Label: Mana Infinita
+			Tooltip: Se ativado, o jogador terá mana infinita enquanto o acessório estiver equipado.
+		}
+
+		InfiniteFlight: {
+			Label: Voo Infinito
+			Tooltip: Se ativado, o jogador terá tempo de voo infinito (asas/botas) enquanto o acessório estiver equipado.
+		}
+
+		InfiniteAmmo: {
+			Label: Munição Infinita
+			Tooltip: Se ativado, armas não consumirão munição enquanto o acessório estiver equipado.
 		}
 	}
 }

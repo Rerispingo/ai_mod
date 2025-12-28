@@ -47,13 +47,20 @@ Este projeto segue as convenções de codificação padrão do C# e as diretrize
 - **Relógio de Hiper Velocidade (Hyper Speed Clock):**
     - Um acessório que aumenta a velocidade de ataque de todas as classes.
     - **Configurável:** O bônus de velocidade pode ser ajustado entre 0% e 300% através do menu de configurações do mod.
+    - **Novos Bônus Configuráveis:**
+        - **Mana Infinita:** Quando ativado, o jogador possui mana ilimitada.
+        - **Voo Infinito:** Quando ativado, o tempo de voo com asas ou botas é resetado constantemente.
+        - **Munição Infinita:** Quando ativado, armas não consomem munição ao disparar.
     - **Receita:** Pode ser fabricado livremente (sem itens e sem bancada).
-    - **Correção de Frequência:** Utiliza um `GlobalItem` para reduzir o `useTime` e `useAnimation` de todas as armas com base no bônus configurado. Isso garante que a frequência de disparos de projéteis também seja aumentada proporcionalmente.
+    - **Correção de Frequência:** Utiliza um `GlobalItem` para reduzir o `useTime` e `useAnimation` de todas as armas com base no bônus configurado.
     - **Velocidade de Projétil:** Dobra a velocidade dos projéteis disparados.
     - Localização disponível em Inglês e Português.
 
 ### Configurações
 - **Bônus de Velocidade de Ataque:** Slider de 0 a 300% (Padrão: 100%).
+- **Mana Infinita:** Liga/Desliga mana ilimitada (Padrão: Off).
+- **Voo Infinito:** Liga/Desliga voo ilimitado (Padrão: Off).
+- **Munição Infinita:** Liga/Desliga consumo de munição (Padrão: Off).
 
 ## Instruções de Desenvolvimento
 
