@@ -3,7 +3,7 @@ Items: {
 		DisplayName: Hyper Speed Clock
 		Tooltip:
 			'''
-			Significantly increases the attack speed of all weapons.
+			Increases attack speed, damage and critical strike chance.
 			Can grant infinite mana, flight, and ammo (configurable).
 			"Time moves faster when you're fighting"
 			'''
@@ -13,11 +13,25 @@ Items: {
 Configs: {
 	HyperSpeedConfig: {
 		DisplayName: Hyper Speed Configuration
-		Headers.Ajustes: Clock Adjustments
+
+		Headers: {
+			Ajustes: Clock Adjustments
+			Extras: Extra Features
+		}
 
 		AttackSpeedBonus: {
 			Label: Attack Speed Bonus (%)
 			Tooltip: Sets the attack speed bonus (0-300%). 100% doubles the original speed.
+		}
+
+		DamageBonus: {
+			Label: Damage Bonus (%)
+			Tooltip: Sets the damage bonus (0-300%). 100% is +100% damage.
+		}
+
+		CritBonus: {
+			Label: Critical Strike Bonus (%)
+			Tooltip: Sets the critical strike bonus (0-100%).
 		}
 
 		InfiniteMana: {

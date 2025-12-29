@@ -14,8 +14,21 @@ Este é um mod para Terraria desenvolvido usando tModLoader. O objetivo deste RE
 
 ```
 ai_mod/
+├── Common/
+│   ├── Configs/
+│   │   └── HyperSpeedConfig.cs
+│   ├── GlobalItems/
+│   │   └── HyperSpeedGlobalItem.cs
+│   └── Players/
+│       └── HyperSpeedPlayer.cs
+├── Content/
+│   └── Items/
+│       └── Accessories/
+│           ├── HyperSpeedClock.cs
+│           └── HyperSpeedClock.png
 ├── Localization/
-│   └── en-US_Mods.ai_mod.hjson
+│   ├── en-US_Mods.ai_mod.hjson
+│   └── pt-BR_Mods.ai_mod.hjson
 ├── Properties/
 │   └── launchSettings.json
 ├── README.md
@@ -31,23 +44,28 @@ ai_mod/
 ## Arquivos Importantes
 
 - `ai_mod.cs`: O arquivo principal do mod, contendo a classe Mod principal.
+- `Common/`: Contém lógica compartilhada, configurações e gerenciamento de jogadores.
+- `Content/`: Contém os itens, blocos e outros conteúdos do jogo.
 
 ## Convenções de Codificação
 
-Este projeto segue as convenções de codificação padrão do C# e as diretrizes da API do tModLoader. Recomenda-se o uso de um formatador de código (como o fornecido pelo Visual Studio ou Rider) para manter a consistência.
+Este projeto segue as convenções de codificação padrão do C# e as diretrizes da API do tModLoader.
 
 - **Nomenclatura:** Use `PascalCase` para nomes de classes, métodos e propriedades. Use `camelCase` para variáveis locais e parâmetros.
 - **Comentários:** Comente o código de forma clara e concisa, explicando a lógica complexa ou partes não óbvias.
-- **Organização:** Mantenha os arquivos e pastas organizados de forma lógica, agrupando funcionalidades relacionadas.
+- **Organização:** Arquivos organizados em pastas por tipo (`Configs`, `GlobalItems`, `Players`, `Items`, etc.).
 
 ## Detalhes Específicos do Mod
 
 ### Itens Adicionados
 
 - **Relógio de Hiper Velocidade (Hyper Speed Clock):**
-    - Um acessório que aumenta a velocidade de ataque de todas as classes.
-    - **Configurável:** O bônus de velocidade pode ser ajustado entre 0% e 300% através do menu de configurações do mod.
-    - **Novos Bônus Configuráveis:**
+    - Um acessório que aumenta atributos de combate de todas as classes.
+    - **Configurável:** Os bônus podem ser ajustados através do menu de configurações do mod.
+    - **Bônus Configuráveis:**
+        - **Velocidade de Ataque:** Slider de 0 a 300% (Padrão: 100%).
+        - **Bônus de Dano:** Slider de 0 a 300% (Padrão: 0%).
+        - **Bônus de Crítico:** Slider de 0 a 100% (Padrão: 0%).
         - **Mana Infinita:** Quando ativado, o jogador possui mana ilimitada.
         - **Voo Infinito:** Quando ativado, o tempo de voo com asas ou botas é resetado constantemente.
         - **Munição Infinita:** Quando ativado, armas não consomem munição ao disparar.
@@ -55,12 +73,6 @@ Este projeto segue as convenções de codificação padrão do C# e as diretrize
     - **Correção de Frequência:** Utiliza um `GlobalItem` para reduzir o `useTime` e `useAnimation` de todas as armas com base no bônus configurado.
     - **Velocidade de Projétil:** Dobra a velocidade dos projéteis disparados.
     - Localização disponível em Inglês e Português.
-
-### Configurações
-- **Bônus de Velocidade de Ataque:** Slider de 0 a 300% (Padrão: 100%).
-- **Mana Infinita:** Liga/Desliga mana ilimitada (Padrão: Off).
-- **Voo Infinito:** Liga/Desliga voo ilimitado (Padrão: Off).
-- **Munição Infinita:** Liga/Desliga consumo de munição (Padrão: Off).
 
 ## Instruções de Desenvolvimento
 

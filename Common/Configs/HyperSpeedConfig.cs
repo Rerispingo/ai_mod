@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using Terraria.ModLoader.Config;
 
-namespace ai_mod
+namespace ai_mod.Common.Configs
 {
     /// <summary>
     /// Configuração do mod para ajustar os bônus do HyperSpeedClock.
@@ -18,6 +18,18 @@ namespace ai_mod
         [Range(0, 300)]
         [Slider]
         public int AttackSpeedBonus;
+
+        [DefaultValue(0)]
+        [Range(0, 300)]
+        [Slider]
+        public int DamageBonus;
+
+        [DefaultValue(0)]
+        [Range(0, 100)]
+        [Slider]
+        public int CritBonus;
+
+        [Header("Extras")]
 
         [DefaultValue(false)]
         public bool InfiniteMana;

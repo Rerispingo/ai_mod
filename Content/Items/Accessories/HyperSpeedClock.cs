@@ -1,11 +1,12 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using ai_mod.Common.Players;
 
 namespace ai_mod.Content.Items.Accessories
 {
     /// <summary>
-    /// Acessório que aumenta a velocidade de ataque de todas as classes em 100%.
+    /// Acessório que aumenta atributos de combate conforme configurado.
     /// </summary>
     public class HyperSpeedClock : ModItem
     {
@@ -18,9 +19,7 @@ namespace ai_mod.Content.Items.Accessories
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual) {
-            // Define a flag no ModPlayer para que o GlobalItem possa aplicar os bônus de velocidade.
-            // O uso de GlobalItem garante que a frequência de projéteis também seja aumentada,
-            // o que nem sempre acontece apenas aumentando o atributo de Attack Speed.
+            // Define a flag no ModPlayer para que o GlobalItem possa aplicar os bônus.
             player.GetModPlayer<HyperSpeedPlayer>().hasHyperSpeedClock = true;
         }
 

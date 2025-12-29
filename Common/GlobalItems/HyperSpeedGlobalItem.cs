@@ -1,7 +1,9 @@
 using Terraria;
 using Terraria.ModLoader;
+using ai_mod.Common.Configs;
+using ai_mod.Common.Players;
 
-namespace ai_mod
+namespace ai_mod.Common.GlobalItems
 {
     public class HyperSpeedGlobalItem : GlobalItem
     {
