@@ -64,13 +64,17 @@ Este projeto segue as convenções de codificação padrão do C# e as diretrize
     - **Configurável:** Os bônus podem ser ajustados através do menu de configurações do mod.
     - **Bônus Configuráveis:**
         - **Velocidade de Ataque:** Slider de 0 a 300% (Padrão: 100%).
+        - **Velocidade de Mineração:** Slider de 0 a 1000% (Padrão: 100%). Afeta picaretas, machados e martelos. Inclui bônus de dano a paredes para quebra instantânea.
+        - **Velocidade de Posicionamento:** Slider de 0 a 1000% (Padrão: 100%). Afeta blocos, paredes, tintas, líquidos (baldes), etc.
+        - **Alcance de Blocos:** Slider de 0 a 50 blocos (Padrão: 0). Afeta alcance de mineração e construção (via `tileBoost` e `blockRange`).
         - **Bônus de Dano:** Slider de 0 a 300% (Padrão: 0%).
         - **Bônus de Crítico:** Slider de 0 a 100% (Padrão: 0%).
         - **Mana Infinita:** Quando ativado, o jogador possui mana ilimitada.
         - **Voo Infinito:** Quando ativado, o tempo de voo com asas ou botas é resetado constantemente.
         - **Munição Infinita:** Quando ativado, armas não consomem munição ao disparar.
+        - **Minions e Sentinelas Infinitos:** Quando ativado, aumenta o limite de minions e sentinelas em +200.
     - **Receita:** Pode ser fabricado livremente (sem itens e sem bancada).
-    - **Correção de Frequência:** Utiliza um `GlobalItem` para reduzir o `useTime` e `useAnimation` de todas as armas com base no bônus configurado.
+    - **Correção de Frequência:** Utiliza um `GlobalItem` para reduzir o `useTime` e `useAnimation` dos itens com base no bônus configurado (Combate, Mineração ou Posicionamento).
     - **Velocidade de Projétil:** Dobra a velocidade dos projéteis disparados.
     - Localização disponível em Inglês e Português.
 

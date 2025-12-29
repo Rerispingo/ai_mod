@@ -3,8 +3,9 @@ Items: {
 		DisplayName: Hyper Speed Clock
 		Tooltip:
 			'''
-			Increases attack speed, damage and critical strike chance.
-			Can grant infinite mana, flight, and ammo (configurable).
+			Increases attack, mining and placement speed.
+			Increases damage, critical strike chance and block range.
+			Can grant infinite mana, flight, ammo and minions (configurable).
 			"Time moves faster when you're fighting"
 			'''
 	}
@@ -24,6 +25,16 @@ Configs: {
 			Tooltip: Sets the attack speed bonus (0-300%). 100% doubles the original speed.
 		}
 
+		MiningSpeedBonus: {
+			Label: Mining Speed Bonus (%)
+			Tooltip: Sets the mining speed bonus (0-1000%). 100% doubles the original speed.
+		}
+
+		PlacementSpeedBonus: {
+			Label: Placement Speed Bonus (%)
+			Tooltip: Sets the placement speed bonus (0-1000%). 100% doubles the original speed.
+		}
+
 		DamageBonus: {
 			Label: Damage Bonus (%)
 			Tooltip: Sets the damage bonus (0-300%). 100% is +100% damage.
@@ -32,6 +43,11 @@ Configs: {
 		CritBonus: {
 			Label: Critical Strike Bonus (%)
 			Tooltip: Sets the critical strike bonus (0-100%).
+		}
+
+		TileRangeBonus: {
+			Label: Block Range Bonus
+			Tooltip: Increases mining and placement range (0-50 blocks).
 		}
 
 		InfiniteMana: {
@@ -47,6 +63,11 @@ Configs: {
 		InfiniteAmmo: {
 			Label: Infinite Ammo
 			Tooltip: If enabled, weapons will not consume ammo while the accessory is equipped.
+		}
+
+		InfiniteMinions: {
+			Label: Infinite Minions and Sentries
+			Tooltip: If enabled, increases the max number of minions and sentries by +200.
 		}
 	}
 }

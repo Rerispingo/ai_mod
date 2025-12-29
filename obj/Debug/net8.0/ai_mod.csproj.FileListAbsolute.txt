@@ -10,3 +10,4 @@ C:\Users\Rerispingo\Documents\My Games\Terraria\tModLoader\ModSources\ai_mod\obj
 C:\Users\Rerispingo\Documents\My Games\Terraria\tModLoader\ModSources\ai_mod\obj\Debug\net8.0\refint\ai_mod.dll
 C:\Users\Rerispingo\Documents\My Games\Terraria\tModLoader\ModSources\ai_mod\obj\Debug\net8.0\ai_mod.pdb
 C:\Users\Rerispingo\Documents\My Games\Terraria\tModLoader\ModSources\ai_mod\obj\Debug\net8.0\ref\ai_mod.dll
+C:\Users\Rerispingo\Documents\My Games\Terraria\tModLoader\ModSources\ai_mod\obj\Debug\net8.0\ai_mod.sourcelink.json

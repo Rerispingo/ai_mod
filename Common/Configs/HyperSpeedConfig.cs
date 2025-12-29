@@ -19,6 +19,16 @@ namespace ai_mod.Common.Configs
         [Slider]
         public int AttackSpeedBonus;
 
+        [DefaultValue(100)]
+        [Range(0, 1000)]
+        [Slider]
+        public int MiningSpeedBonus;
+
+        [DefaultValue(100)]
+        [Range(0, 1000)]
+        [Slider]
+        public int PlacementSpeedBonus;
+
         [DefaultValue(0)]
         [Range(0, 300)]
         [Slider]
@@ -31,6 +41,11 @@ namespace ai_mod.Common.Configs
 
         [Header("Extras")]
 
+        [DefaultValue(0)]
+        [Range(0, 50)]
+        [Slider]
+        public int TileRangeBonus;
+
         [DefaultValue(false)]
         public bool InfiniteMana;
 
@@ -39,5 +54,8 @@ namespace ai_mod.Common.Configs
 
         [DefaultValue(false)]
         public bool InfiniteAmmo;
+
+        [DefaultValue(false)]
+        public bool InfiniteMinions;
     }
 }

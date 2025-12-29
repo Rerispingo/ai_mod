@@ -35,6 +35,34 @@ namespace ai_mod.Common.Players
                 if (config.InfiniteFlight) {
                     Player.wingTime = Player.wingTimeMax;
                 }
+
+                // Aplica bônus de alcance
+                if (config.TileRangeBonus > 0) {
+                    Player.blockRange += config.TileRangeBonus;
+                }
+
+                // Aplica bônus de minions e sentinelas
+                if (config.InfiniteMinions) {
+                    Player.maxMinions += 200;
+                    Player.maxTurrets += 200;
+                }
+
+                // Aplica bônus de velocidade de mineração e posicionamento (via atributos do jogador)
+                // Nota: pickSpeed é um multiplicador de tempo (menor é mais rápido)
+                if (config.MiningSpeedBonus > 0) {
+                    float bonus = config.MiningSpeedBonus / 100f;
+                    Player.pickSpeed *= 1f / (1f + bonus);
+                    // O bônus de mineração deve afetar paredes (martelos) e árvores (machados)
+                    // No Terraria, wallSpeed e tileSpeed afetam a velocidade de ação dessas ferramentas.
+                    Player.wallSpeed += bonus;
+                    Player.tileSpeed += bonus;
+                }
+
+                if (config.PlacementSpeedBonus > 0) {
+                    float bonus = config.PlacementSpeedBonus / 100f;
+                    Player.tileSpeed += bonus;
+                    Player.wallSpeed += bonus;
+                }
             }
         }
     }

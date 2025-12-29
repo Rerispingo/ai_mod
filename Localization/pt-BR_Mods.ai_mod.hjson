@@ -3,8 +3,9 @@ Items: {
 		DisplayName: Relógio de Hiper Velocidade
 		Tooltip:
 			'''
-			Aumenta a velocidade de ataque, dano e chance de acerto crítico.
-			Pode conceder mana, voo e munição infinita (configurável).
+			Aumenta a velocidade de ataque, mineração e posicionamento.
+			Aumenta o dano, chance crítica e o alcance de blocos.
+			Pode conceder mana, voo, munição e minions infinitos (configurável).
 			"O tempo passa mais rápido quando você está lutando"
 			'''
 	}
@@ -21,7 +22,17 @@ Configs: {
 
 		AttackSpeedBonus: {
 			Label: Bônus de Velocidade de Ataque (%)
-			Tooltip: Define o bônus de velocidade (0-300%). 100% dobra a velocidade original.
+			Tooltip: Define o bônus de velocidade de ataque (0-300%). 100% dobra a velocidade original.
+		}
+
+		MiningSpeedBonus: {
+			Label: Bônus de Velocidade de Mineração (%)
+			Tooltip: Define o bônus de velocidade de mineração (0-1000%). 100% dobra a velocidade original.
+		}
+
+		PlacementSpeedBonus: {
+			Label: Bônus de Velocidade de Posicionamento (%)
+			Tooltip: Define o bônus de velocidade de posicionamento (0-1000%). 100% dobra a velocidade original.
 		}
 
 		DamageBonus: {
@@ -32,6 +43,11 @@ Configs: {
 		CritBonus: {
 			Label: Bônus de Crítico (%)
 			Tooltip: Define o bônus de acerto crítico (0-100%).
+		}
+
+		TileRangeBonus: {
+			Label: Bônus de Alcance de Blocos
+			Tooltip: Aumenta o alcance de mineração e posicionamento (0-50 blocos).
 		}
 
 		InfiniteMana: {
@@ -47,6 +63,11 @@ Configs: {
 		InfiniteAmmo: {
 			Label: Munição Infinita
 			Tooltip: Se ativado, armas não consumirão munição enquanto o acessório estiver equipado.
+		}
+
+		InfiniteMinions: {
+			Label: Minions e Sentinelas Infinitos
+			Tooltip: Se ativado, aumenta em +200 o limite de minions e sentinelas.
 		}
 	}
 }
