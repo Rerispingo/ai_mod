@@ -5,7 +5,7 @@ Items: {
 			'''
 			Increases attack speed, movement speed and acceleration.
 			Increases damage, critical strike chance and block range.
-			Can grant infinite mana, flight, ammo and minions (configurable).
+			Can grant infinite mana, flight, ammo, minions and Terraspark effects (configurable).
 			"Time moves faster when you're fighting"
 			'''
 	}
@@ -27,12 +27,12 @@ Configs: {
 
 		MoveSpeedBonus: {
 			Label: Movement Speed Bonus (%)
-			Tooltip: Sets the maximum movement speed bonus (0-150%).
+			Tooltip: Sets the maximum movement speed bonus (0-250%).
 		}
 
 		AccelerationBonus: {
 			Label: Acceleration Bonus (%)
-			Tooltip: Sets the player acceleration bonus (0-150%).
+			Tooltip: Sets the player acceleration bonus (0-1000%).
 		}
 
 		DamageBonus: {
@@ -68,6 +68,11 @@ Configs: {
 		InfiniteMinions: {
 			Label: Infinite Minions and Sentries
 			Tooltip: If enabled, increases the max number of minions and sentries by +200.
+		}
+
+		TerrasparkEffects: {
+			Label: Terraspark Boots Effects
+			Tooltip: If enabled, grants effects like super fast running, ice mobility, liquid walking, and lava immunity.
 		}
 	}
 }

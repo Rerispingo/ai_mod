@@ -64,8 +64,8 @@ Este projeto segue as convenções de codificação padrão do C# e as diretrize
     - **Configurável:** Os bônus podem ser ajustados através do menu de configurações do mod.
     - **Bônus Configuráveis:**
         - **Velocidade de Ataque:** Slider de 0 a 300% (Padrão: 100%).
-        - **Velocidade de Movimento:** Slider de 0 a 150% (Padrão: 0%). Afeta a velocidade máxima de corrida e movimento.
-        - **Aceleração:** Slider de 0 a 150% (Padrão: 0%). Afeta a rapidez com que o jogador atinge a velocidade máxima.
+        - **Velocidade de Movimento:** Slider de 0 a 250% (Padrão: 0%). Afeta a velocidade máxima de corrida e movimento.
+        - **Aceleração:** Slider de 0 a 1000% (Padrão: 0%). Afeta a rapidez com que o jogador atinge a velocidade máxima.
         - **Alcance de Blocos:** Slider de 0 a 50 blocos (Padrão: 0). Afeta alcance de mineração e construção (via `tileBoost` e `blockRange`).
         - **Bônus de Dano:** Slider de 0 a 300% (Padrão: 0%).
         - **Bônus de Crítico:** Slider de 0 a 100% (Padrão: 0%).
@@ -73,9 +73,11 @@ Este projeto segue as convenções de codificação padrão do C# e as diretrize
         - **Voo Infinito:** Quando ativado, o tempo de voo com asas ou botas é resetado constantemente.
         - **Munição Infinita:** Quando ativado, armas não consomem munição ao disparar.
         - **Minions e Sentinelas Infinitos:** Quando ativado, aumenta o limite de minions e sentinelas em +200.
+        - **Efeitos da Bota de Terraisca:** Quando ativado, concede corrida super veloz, mobilidade no gelo, 10% de velocidade de movimento, andar sobre líquidos (água, lava, mel, shimmer) e imunidade a lava infinita.
     - **Receita:** Pode ser fabricado livremente (sem itens e sem bancada).
     - **Correção de Frequência:** Utiliza um `GlobalItem` para reduzir o `useTime` e `useAnimation` dos itens de combate com base no bônus configurado.
     - **Velocidade de Projétil:** Dobra a velocidade dos projéteis disparados.
+    - **Implementação de Velocidade:** Os bônus de velocidade e aceleração são aplicados em `PostUpdateRunSpeeds()` para máxima compatibilidade.
     - Localização disponível em Inglês e Português.
 
 ## Instruções de Desenvolvimento

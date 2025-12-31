@@ -20,12 +20,12 @@ namespace ai_mod.Common.Configs
         public int AttackSpeedBonus;
 
         [DefaultValue(0)]
-        [Range(0, 150)]
+        [Range(0, 250)]
         [Slider]
         public int MoveSpeedBonus;
 
         [DefaultValue(0)]
-        [Range(0, 150)]
+        [Range(0, 1000)]
         [Slider]
         public int AccelerationBonus;
 
@@ -57,5 +57,8 @@ namespace ai_mod.Common.Configs
 
         [DefaultValue(false)]
         public bool InfiniteMinions;
+
+        [DefaultValue(false)]
+        public bool TerrasparkEffects;
     }
 }
