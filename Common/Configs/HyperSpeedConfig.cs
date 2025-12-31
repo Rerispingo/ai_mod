@@ -19,15 +19,15 @@ namespace ai_mod.Common.Configs
         [Slider]
         public int AttackSpeedBonus;
 
-        [DefaultValue(100)]
-        [Range(0, 1000)]
+        [DefaultValue(0)]
+        [Range(0, 150)]
         [Slider]
-        public int MiningSpeedBonus;
+        public int MoveSpeedBonus;
 
-        [DefaultValue(100)]
-        [Range(0, 1000)]
+        [DefaultValue(0)]
+        [Range(0, 150)]
         [Slider]
-        public int PlacementSpeedBonus;
+        public int AccelerationBonus;
 
         [DefaultValue(0)]
         [Range(0, 300)]

@@ -3,7 +3,7 @@ Items: {
 		DisplayName: Hyper Speed Clock
 		Tooltip:
 			'''
-			Increases attack, mining and placement speed.
+			Increases attack speed, movement speed and acceleration.
 			Increases damage, critical strike chance and block range.
 			Can grant infinite mana, flight, ammo and minions (configurable).
 			"Time moves faster when you're fighting"
@@ -25,14 +25,14 @@ Configs: {
 			Tooltip: Sets the attack speed bonus (0-300%). 100% doubles the original speed.
 		}
 
-		MiningSpeedBonus: {
-			Label: Mining Speed Bonus (%)
-			Tooltip: Sets the mining speed bonus (0-1000%). 100% doubles the original speed.
+		MoveSpeedBonus: {
+			Label: Movement Speed Bonus (%)
+			Tooltip: Sets the maximum movement speed bonus (0-150%).
 		}
 
-		PlacementSpeedBonus: {
-			Label: Placement Speed Bonus (%)
-			Tooltip: Sets the placement speed bonus (0-1000%). 100% doubles the original speed.
+		AccelerationBonus: {
+			Label: Acceleration Bonus (%)
+			Tooltip: Sets the player acceleration bonus (0-150%).
 		}
 
 		DamageBonus: {

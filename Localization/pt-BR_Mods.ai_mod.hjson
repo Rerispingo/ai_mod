@@ -3,7 +3,7 @@ Items: {
 		DisplayName: Relógio de Hiper Velocidade
 		Tooltip:
 			'''
-			Aumenta a velocidade de ataque, mineração e posicionamento.
+			Aumenta a velocidade de ataque, velocidade de movimento e aceleração.
 			Aumenta o dano, chance crítica e o alcance de blocos.
 			Pode conceder mana, voo, munição e minions infinitos (configurável).
 			"O tempo passa mais rápido quando você está lutando"
@@ -25,14 +25,14 @@ Configs: {
 			Tooltip: Define o bônus de velocidade de ataque (0-300%). 100% dobra a velocidade original.
 		}
 
-		MiningSpeedBonus: {
-			Label: Bônus de Velocidade de Mineração (%)
-			Tooltip: Define o bônus de velocidade de mineração (0-1000%). 100% dobra a velocidade original.
+		MoveSpeedBonus: {
+			Label: Bônus de Velocidade de Movimento (%)
+			Tooltip: Define o bônus de velocidade de movimento máximo (0-150%).
 		}
 
-		PlacementSpeedBonus: {
-			Label: Bônus de Velocidade de Posicionamento (%)
-			Tooltip: Define o bônus de velocidade de posicionamento (0-1000%). 100% dobra a velocidade original.
+		AccelerationBonus: {
+			Label: Bônus de Aceleração (%)
+			Tooltip: Define o bônus de aceleração do jogador (0-150%).
 		}
 
 		DamageBonus: {

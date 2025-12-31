@@ -64,8 +64,8 @@ Este projeto segue as convenções de codificação padrão do C# e as diretrize
     - **Configurável:** Os bônus podem ser ajustados através do menu de configurações do mod.
     - **Bônus Configuráveis:**
         - **Velocidade de Ataque:** Slider de 0 a 300% (Padrão: 100%).
-        - **Velocidade de Mineração:** Slider de 0 a 1000% (Padrão: 100%). Afeta picaretas, machados e martelos. Inclui bônus de dano a paredes para quebra instantânea.
-        - **Velocidade de Posicionamento:** Slider de 0 a 1000% (Padrão: 100%). Afeta blocos, paredes, tintas, líquidos (baldes), etc.
+        - **Velocidade de Movimento:** Slider de 0 a 150% (Padrão: 0%). Afeta a velocidade máxima de corrida e movimento.
+        - **Aceleração:** Slider de 0 a 150% (Padrão: 0%). Afeta a rapidez com que o jogador atinge a velocidade máxima.
         - **Alcance de Blocos:** Slider de 0 a 50 blocos (Padrão: 0). Afeta alcance de mineração e construção (via `tileBoost` e `blockRange`).
         - **Bônus de Dano:** Slider de 0 a 300% (Padrão: 0%).
         - **Bônus de Crítico:** Slider de 0 a 100% (Padrão: 0%).
@@ -74,7 +74,7 @@ Este projeto segue as convenções de codificação padrão do C# e as diretrize
         - **Munição Infinita:** Quando ativado, armas não consomem munição ao disparar.
         - **Minions e Sentinelas Infinitos:** Quando ativado, aumenta o limite de minions e sentinelas em +200.
     - **Receita:** Pode ser fabricado livremente (sem itens e sem bancada).
-    - **Correção de Frequência:** Utiliza um `GlobalItem` para reduzir o `useTime` e `useAnimation` dos itens com base no bônus configurado (Combate, Mineração ou Posicionamento).
+    - **Correção de Frequência:** Utiliza um `GlobalItem` para reduzir o `useTime` e `useAnimation` dos itens de combate com base no bônus configurado.
     - **Velocidade de Projétil:** Dobra a velocidade dos projéteis disparados.
     - Localização disponível em Inglês e Português.
 

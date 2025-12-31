@@ -47,21 +47,17 @@ namespace ai_mod.Common.Players
                     Player.maxTurrets += 200;
                 }
 
-                // Aplica bônus de velocidade de mineração e posicionamento (via atributos do jogador)
-                // Nota: pickSpeed é um multiplicador de tempo (menor é mais rápido)
-                if (config.MiningSpeedBonus > 0) {
-                    float bonus = config.MiningSpeedBonus / 100f;
-                    Player.pickSpeed *= 1f / (1f + bonus);
-                    // O bônus de mineração deve afetar paredes (martelos) e árvores (machados)
-                    // No Terraria, wallSpeed e tileSpeed afetam a velocidade de ação dessas ferramentas.
-                    Player.wallSpeed += bonus;
-                    Player.tileSpeed += bonus;
+                // Aplica bônus de velocidade de movimento máximo e aceleração
+                if (config.MoveSpeedBonus > 0) {
+                    float moveSpeedMult = 1f + (config.MoveSpeedBonus / 100f);
+                    // accRunSpeed afeta a velocidade máxima com botas, maxRunSpeed afeta a velocidade base
+                    Player.accRunSpeed *= moveSpeedMult;
+                    Player.maxRunSpeed *= moveSpeedMult;
                 }
 
-                if (config.PlacementSpeedBonus > 0) {
-                    float bonus = config.PlacementSpeedBonus / 100f;
-                    Player.tileSpeed += bonus;
-                    Player.wallSpeed += bonus;
+                if (config.AccelerationBonus > 0) {
+                    // runAcceleration controla a rapidez com que o jogador atinge a velocidade máxima
+                    Player.runAcceleration *= 1f + (config.AccelerationBonus / 100f);
                 }
             }
         }
